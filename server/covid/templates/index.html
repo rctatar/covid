@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set active_page = "index" %}
+
+<style>
+  .img-container { text-align: center; }
+</style>
+
+<div class="img-container">
+<img valign="middle" src="static/covid.png" alt="graph" />
+</div>
+
+<div>Data from Johns Hopkins University CSSE. See
+<a href="https://coronavirus.jhu.edu/map.html">map.</a>
+<div>
+Model is best fit to y = Ae<sup>B(t-t<sub>0</sub>)</sup> with 2-week forward look.
+</div>
+</div>
+
+{% endblock %}
